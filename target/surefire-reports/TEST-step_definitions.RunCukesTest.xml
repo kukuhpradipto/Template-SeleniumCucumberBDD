@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="16" failures="0" name="step_definitions.RunCukesTest" time="4.481" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.361-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/kukuh/AlteraAcademy/Automation/BDDSourceDemo"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/kukuh/AlteraAcademy/Automation/BDDSourceDemo"/>
+    <property name="java.runtime.version" value="1.8.0_361-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/linuxbrew/.linuxbrew/Cellar/maven/3.8.7/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/linuxbrew/.linuxbrew/Cellar/maven/3.8.7/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.15.0-58-generic"/>
+    <property name="library.jansi.path" value="/home/linuxbrew/.linuxbrew/Cellar/maven/3.8.7/libexec/lib/jansi-native"/>
+    <property name="user.home" value="/home/kukuh"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="kukuh"/>
+    <property name="java.class.path" value="/home/linuxbrew/.linuxbrew/Cellar/maven/3.8.7/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk1.8.0_361/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_361"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/resources.jar:/usr/lib/jvm/jdk1.8.0_361/jre/lib/rt.jar:/usr/lib/jvm/jdk1.8.0_361/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.8.0_361/jre/lib/jce.jar:/usr/lib/jvm/jdk1.8.0_361/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.8.0_361/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.8.0_361/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="maven.home" value="/home/linuxbrew/.linuxbrew/Cellar/maven/3.8.7/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Scenario: Normal login" name="Given User open the website sauce demo" time="0.002"/>
+  <testcase classname="Scenario: Normal login" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="Scenario: Normal login" name="Then User already on landing page" time="0"/>
+  <testcase classname="Scenario: Normal login" name="Scenario: Normal login" time="1.162"/>
+  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="Given User open the website sauce demo" time="0"/>
+  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;&quot; as password" time="0"/>
+  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="Then User see error &quot;Epic sadface: Password is required&quot; on login page" time="0"/>
+  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="| standard_user |  | Epic sadface: Password is required |" time="1.106"/>
+  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="Given User open the website sauce demo" time="0.001"/>
+  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="When User input &quot;&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="Then User see error &quot;Epic sadface: Username is required&quot; on login page" time="0"/>
+  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="|  | secret_sauce | Epic sadface: Username is required |" time="1.105"/>
+  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="Given User open the website sauce demo" time="0"/>
+  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="When User input &quot;asd&quot; as userName and Input &quot;123&quot; as password" time="0"/>
+  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="Then User see error &quot;Epic sadface: Username and password do not match any user in this service&quot; on login page" time="0"/>
+  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" time="1.105"/>
+</testsuite>
