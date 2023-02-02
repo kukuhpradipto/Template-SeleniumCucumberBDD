@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="step_definitions.RunCukesTest" time="4.481" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="step_definitions.RunCukesTest" time="1.121" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/amd64"/>
@@ -62,20 +62,10 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Normal login" name="Given User open the website sauce demo" time="0.002"/>
-  <testcase classname="Scenario: Normal login" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
-  <testcase classname="Scenario: Normal login" name="Then User already on landing page" time="0"/>
-  <testcase classname="Scenario: Normal login" name="Scenario: Normal login" time="1.162"/>
-  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="Given User open the website sauce demo" time="0"/>
-  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;&quot; as password" time="0"/>
-  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="Then User see error &quot;Epic sadface: Password is required&quot; on login page" time="0"/>
-  <testcase classname="| standard_user |  | Epic sadface: Password is required |" name="| standard_user |  | Epic sadface: Password is required |" time="1.106"/>
-  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="Given User open the website sauce demo" time="0.001"/>
-  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="When User input &quot;&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
-  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="Then User see error &quot;Epic sadface: Username is required&quot; on login page" time="0"/>
-  <testcase classname="|  | secret_sauce | Epic sadface: Username is required |" name="|  | secret_sauce | Epic sadface: Username is required |" time="1.105"/>
-  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="Given User open the website sauce demo" time="0"/>
-  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="When User input &quot;asd&quot; as userName and Input &quot;123&quot; as password" time="0"/>
-  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="Then User see error &quot;Epic sadface: Username and password do not match any user in this service&quot; on login page" time="0"/>
-  <testcase classname="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" name="| asd | 123 | Epic sadface: Username and password do not match any user in this service |" time="1.105"/>
+  <testcase classname="Scenario: User make a purchase with 2 item" name="Given User open the website sauce demo" time="0.004"/>
+  <testcase classname="Scenario: User make a purchase with 2 item" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="Scenario: User make a purchase with 2 item" name="Then User already on landing page" time="0.001"/>
+  <testcase classname="Scenario: User make a purchase with 2 item" name="And User sort product list by &quot;Price (high to low)&quot;" time="0"/>
+  <testcase classname="Scenario: User make a purchase with 2 item" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="Scenario: User make a purchase with 2 item" name="Scenario: User make a purchase with 2 item" time="1.116"/>
 </testsuite>
