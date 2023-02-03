@@ -27,8 +27,7 @@ public class PurchaseSteps {
     @And("User sort product list by \"(.*)\"")
     public void sortProductValue(String sort) throws InterruptedException {
         LandingPage landingPage = new LandingPage(webDriver);
-        Thread.sleep(2000);
-//        landingPage.clickBasket1();
+        Thread.sleep(1000);
         landingPage.sortProduct(sort);
     }
 
@@ -37,7 +36,7 @@ public class PurchaseSteps {
         LandingPage landingPage = new LandingPage(webDriver);
         landingPage.clickBasket1();
         landingPage.clickBasket2();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
     }
 
 }

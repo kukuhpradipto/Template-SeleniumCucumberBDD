@@ -1,4 +1,7 @@
 step_definitions/LoginSteps.class
-step_definitions/Hooks.class
+step_definitions/CompleteStep.class
 step_definitions/PurchaseSteps.class
 step_definitions/RunCukesTest.class
+step_definitions/Hooks.class
+step_definitions/CheckoutStep.class
+step_definitions/CheckOutFromStep.class

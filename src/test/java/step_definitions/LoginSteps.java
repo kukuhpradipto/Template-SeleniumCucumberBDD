@@ -17,11 +17,13 @@ public class LoginSteps {
     }
 
     @When("User input \"(.*)\" as userName and Input \"(.*)\" as password")
-    public void inputCredential(String userName, String password){
+    public void inputCredential(String userName, String password) throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         loginPage.setUserName(userName);
         loginPage.setPassword(password);
         loginPage.clickLogin();
+        Thread.sleep(1000);
+
     }
 
     @Given("User open the website sauce demo") // verifiy tulisan Username
