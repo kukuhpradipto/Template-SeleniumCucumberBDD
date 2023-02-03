@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3007816167,
+              "duration": 2240282907,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 148507058,
+              "duration": 108741721,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 741889798,
+              "duration": 498700995,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1876831484,
+              "duration": 1535292899,
               "status": "passed"
             },
             "line": 7,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1108058922,
+              "duration": 1155858565,
               "status": "passed"
             },
             "line": 8,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 1179640909,
+              "duration": 1140631173,
               "status": "passed"
             },
             "line": 9,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1070839635,
+              "duration": 1079668209,
               "status": "passed"
             },
             "line": 10,
@@ -110,10 +110,22 @@
           },
           {
             "result": {
-              "duration": 1055966766,
+              "duration": 1044138279,
               "status": "passed"
             },
             "line": 11,
+            "name": "User delete product Test.allTheThings",
+            "match": {
+              "location": "CheckoutStep.clickOnDeleteProduct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1059360005,
+              "status": "passed"
+            },
+            "line": 12,
             "name": "User click button checkout",
             "match": {
               "location": "CheckoutStep.clickOnCheckOut()"
@@ -122,10 +134,10 @@
           },
           {
             "result": {
-              "duration": 2294084242,
+              "duration": 2283404241,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"123\".",
             "match": {
               "arguments": [
@@ -148,10 +160,10 @@
           },
           {
             "result": {
-              "duration": 2074862836,
+              "duration": 2078253028,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "User click button finish",
             "match": {
               "location": "CompleteStep.clickOnBtnFinish()"
@@ -160,10 +172,10 @@
           },
           {
             "result": {
-              "duration": 1000466929,
+              "duration": 1000480778,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "User complete order",
             "match": {
               "location": "CompleteStep.verifyOnCheckOutCompletePage()"

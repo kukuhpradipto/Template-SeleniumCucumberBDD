@@ -19,9 +19,15 @@ public class CartPage {
         iconsCart.click();
     }
 
+
+    @FindBy(xpath = "//button[@id='remove-test.allthethings()-t-shirt-(red)']")
+    private WebElement deleteProduct;
+    public void clickDeleteProduct(){
+        deleteProduct.click();
+    }
+
     @FindBy(xpath = "//button[@id='checkout']")
     private WebElement btnCheckOut;
-
     public void clickBtnCheckOut(){
         btnCheckOut.click();
     }

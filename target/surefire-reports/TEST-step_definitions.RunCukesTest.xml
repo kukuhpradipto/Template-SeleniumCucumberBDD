@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="step_definitions.RunCukesTest" time="0.157" errors="0" skipped="0">
+<testsuite tests="11" failures="0" name="step_definitions.RunCukesTest" time="0.113" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/amd64"/>
@@ -62,14 +62,15 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: user completed order product" name="Given User open the website sauce demo" time="0.007"/>
+  <testcase classname="Scenario: user completed order product" name="Given User open the website sauce demo" time="0.003"/>
   <testcase classname="Scenario: user completed order product" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
   <testcase classname="Scenario: user completed order product" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
   <testcase classname="Scenario: user completed order product" name="And User choice 2 product from the list" time="0"/>
   <testcase classname="Scenario: user completed order product" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="Scenario: user completed order product" name="Then User delete product Test.allTheThings" time="0"/>
   <testcase classname="Scenario: user completed order product" name="And User click button checkout" time="0"/>
   <testcase classname="Scenario: user completed order product" name="Then User input Check Out Form in Firs Name &quot;kukuh&quot;, Last Name &quot;pradipto&quot; and Partial Code &quot;123&quot;." time="0"/>
   <testcase classname="Scenario: user completed order product" name="And User click button finish" time="0"/>
   <testcase classname="Scenario: user completed order product" name="And User complete order" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="Scenario: user completed order product" time="0.15"/>
+  <testcase classname="Scenario: user completed order product" name="Scenario: user completed order product" time="0.11"/>
 </testsuite>
