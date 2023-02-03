@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="step_definitions.RunCukesTest" time="1.141" errors="0" skipped="0">
+<testsuite tests="54" failures="0" name="step_definitions.RunCukesTest" time="0.66" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/amd64"/>
@@ -62,14 +62,58 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: user completed order product" name="Given User open the website sauce demo" time="0.005"/>
-  <testcase classname="Scenario: user completed order product" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="And User choice 2 product from the list" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="And User click on icon cart to verify product" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="And User click button checkout" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="Then User input Check Out Form in Firs Name &quot;kukuh&quot;, Last Name &quot;pradipto&quot; and Partial Code &quot;123&quot;." time="0"/>
-  <testcase classname="Scenario: user completed order product" name="And User click button finish" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="And User complete order" time="0"/>
-  <testcase classname="Scenario: user completed order product" name="Scenario: user completed order product" time="1.136"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="Given User open the website sauce demo" time="0.006"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="And User click button checkout" time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="Then User input Check Out Form in Firs Name &quot;&quot;, Last Name &quot;&quot; and Partial Code &quot;&quot;." time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="And User see error massage &quot;Error: First Name is required&quot;" time="0"/>
+  <testcase classname="|  |  |  | Error: First Name is required |" name="|  |  |  | Error: First Name is required |" time="0.127"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="Given User open the website sauce demo" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="And User click button checkout" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="Then User input Check Out Form in Firs Name &quot;kukuh&quot;, Last Name &quot;&quot; and Partial Code &quot;&quot;." time="0.001"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="And User see error massage &quot;Error: Last Name is required&quot;" time="0"/>
+  <testcase classname="| kukuh |  |  | Error: Last Name is required |" name="| kukuh |  |  | Error: Last Name is required |" time="0.103"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="Given User open the website sauce demo" time="0.003"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="And User click button checkout" time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="Then User input Check Out Form in Firs Name &quot;kukuh&quot;, Last Name &quot;pradipto&quot; and Partial Code &quot;&quot;." time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="And User see error massage &quot;Error: Postal Code is required&quot;" time="0"/>
+  <testcase classname="| kukuh | pradipto |  | Error: Postal Code is required |" name="| kukuh | pradipto |  | Error: Postal Code is required |" time="0.103"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="Given User open the website sauce demo" time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="And User click button checkout" time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="Then User input Check Out Form in Firs Name &quot;&quot;, Last Name &quot;pradipto&quot; and Partial Code &quot;&quot;." time="0"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="And User see error massage &quot;Error: First Name is required&quot;" time="0.001"/>
+  <testcase classname="|  | pradipto |  | Error: First Name is required |" name="|  | pradipto |  | Error: First Name is required |" time="0.102"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="Given User open the website sauce demo" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="And User click button checkout" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="Then User input Check Out Form in Firs Name &quot;&quot;, Last Name &quot;pradipto&quot; and Partial Code &quot;12345&quot;." time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="And User see error massage &quot;Error: First Name is required&quot;" time="0"/>
+  <testcase classname="|  | pradipto | 12345 | Error: First Name is required |" name="|  | pradipto | 12345 | Error: First Name is required |" time="0.111"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="Given User open the website sauce demo" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="And User sort product list by &quot;Name (Z to A)&quot;" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="And User choice 2 product from the list" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="And User click on icon cart to verify product" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="And User click button checkout" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="Then User input Check Out Form in Firs Name &quot;kukuh&quot;, Last Name &quot;&quot; and Partial Code &quot;12345&quot;." time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="And User see error massage &quot;Error: Last Name is required&quot;" time="0"/>
+  <testcase classname="| kukuh |  | 12345 | Error: Last Name is required |" name="| kukuh |  | 12345 | Error: Last Name is required |" time="0.103"/>
 </testsuite>

@@ -6,8 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Hooks {
-    // untuk starting awal dan ahir automation
-
+    // untuk starting awal
  public static WebDriver webDriver;
 
  @Before

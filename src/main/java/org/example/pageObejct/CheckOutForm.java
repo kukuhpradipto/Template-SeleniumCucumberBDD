@@ -38,4 +38,10 @@ public class CheckOutForm {
         btnContinue.click();
     }
 
+    @FindBy(xpath = "//h3")
+    private WebElement errorFormCheckout;
+    public String verifyErrorFormCheckout(){
+        return errorFormCheckout.getText();
+    }
+
 }

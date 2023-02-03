@@ -1,11 +1,30 @@
 @CheckoutForm
 Feature: Input Checkout Form flow
 
-  Scenario: User input first name, last name, and partial code in checkout form
+#  Scenario: User input first name, last name, and partial code in checkout form
+#    Given User open the website sauce demo
+#    When User input "standard_user" as userName and Input "secret_sauce" as password
+#    And User sort product list by "Name (Z to A)"
+#    And User choice 2 product from the list
+#    And User click on icon cart to verify product
+#    And User click button checkout
+#    Then User input Check Out Form in Firs Name "kukuh", Last Name "pradipto" and Partial Code "123".
+
+  Scenario Outline: User Invalid input first name, last name, and partial code in checkout form
     Given User open the website sauce demo
     When User input "standard_user" as userName and Input "secret_sauce" as password
     And User sort product list by "Name (Z to A)"
     And User choice 2 product from the list
     And User click on icon cart to verify product
     And User click button checkout
-    Then User input Check Out Form in Firs Name "kukuh", Last Name "pradipto" and Partial Code "123".
+    Then User input Check Out Form in Firs Name "<firstName>", Last Name "<lastName>" and Partial Code "<portalCode>".
+    And User see error massage "<errorMassageCheckoutForm>"
+
+    Examples:
+      | firstName | lastName | portalCode | errorMassageCheckoutForm       |
+      |           |          |            | Error: First Name is required  |
+      | kukuh     |          |            | Error: Last Name is required   |
+      | kukuh     | pradipto |            | Error: Postal Code is required |
+      |           | pradipto |            | Error: First Name is required  |
+      |           | pradipto | 12345      | Error: First Name is required  |
+      | kukuh     |          | 12345      | Error: Last Name is required   |

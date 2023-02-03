@@ -1,12 +1,12 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 1932126399,
+              "duration": 2299645308,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "user completed order product",
+        "line": 25,
+        "name": "User Invalid input first name, last name, and partial code in checkout form",
         "description": "",
-        "id": "completed-order;user-completed-order-product",
+        "id": "input-checkout-form-flow;user-invalid-input-first-name,-last-name,-and-partial-code-in-checkout-form;;2",
         "after": [
           {
             "result": {
-              "duration": 1133646002,
+              "duration": 124891733,
               "status": "passed"
             },
             "match": {
@@ -30,14 +30,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 321738371,
+              "duration": 404799767,
               "status": "passed"
             },
-            "line": 6,
+            "line": 14,
             "name": "User open the website sauce demo",
             "match": {
               "location": "LoginSteps.verifyLogin()"
@@ -46,10 +46,10 @@
           },
           {
             "result": {
-              "duration": 1261987644,
+              "duration": 1448581708,
               "status": "passed"
             },
-            "line": 7,
+            "line": 15,
             "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
             "match": {
               "arguments": [
@@ -68,10 +68,10 @@
           },
           {
             "result": {
-              "duration": 1167339536,
+              "duration": 1131349581,
               "status": "passed"
             },
-            "line": 8,
+            "line": 16,
             "name": "User sort product list by \"Name (Z to A)\"",
             "match": {
               "arguments": [
@@ -86,10 +86,10 @@
           },
           {
             "result": {
-              "duration": 1084109749,
+              "duration": 1213161565,
               "status": "passed"
             },
-            "line": 9,
+            "line": 17,
             "name": "User choice 2 product from the list",
             "match": {
               "location": "PurchaseSteps.choiceBasket()"
@@ -98,10 +98,10 @@
           },
           {
             "result": {
-              "duration": 1066545568,
+              "duration": 1066487806,
               "status": "passed"
             },
-            "line": 10,
+            "line": 18,
             "name": "User click on icon cart to verify product",
             "match": {
               "location": "CheckoutStep.clickIconsCart()"
@@ -110,10 +110,10 @@
           },
           {
             "result": {
-              "duration": 1046020375,
+              "duration": 1052375091,
               "status": "passed"
             },
-            "line": 11,
+            "line": 19,
             "name": "User click button checkout",
             "match": {
               "location": "CheckoutStep.clickOnCheckOut()"
@@ -122,11 +122,367 @@
           },
           {
             "result": {
-              "duration": 2254919990,
+              "duration": 2235578988,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"123\".",
+            "line": 20,
+            "name": "User input Check Out Form in Firs Name \"\", Last Name \"\" and Partial Code \"\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 40
+                },
+                {
+                  "val": "",
+                  "offset": 54
+                },
+                {
+                  "val": "",
+                  "offset": 74
+                }
+              ],
+              "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41446471,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User see error massage \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: First Name is required",
+                  "offset": 24
+                }
+              ],
+              "location": "CheckOutFromStep.popUpErrorCheckoutForm(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckoutForm"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1026934328,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User Invalid input first name, last name, and partial code in checkout form",
+        "description": "",
+        "id": "input-checkout-form-flow;user-invalid-input-first-name,-last-name,-and-partial-code-in-checkout-form;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 101928343,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115103466,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User open the website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1586712506,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1112857326,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User sort product list by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 27
+                }
+              ],
+              "location": "PurchaseSteps.sortProductValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1159130772,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User choice 2 product from the list",
+            "match": {
+              "location": "PurchaseSteps.choiceBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1072406090,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on icon cart to verify product",
+            "match": {
+              "location": "CheckoutStep.clickIconsCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1050494087,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click button checkout",
+            "match": {
+              "location": "CheckoutStep.clickOnCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2258346355,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"\" and Partial Code \"\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kukuh",
+                  "offset": 40
+                },
+                {
+                  "val": "",
+                  "offset": 59
+                },
+                {
+                  "val": "",
+                  "offset": 79
+                }
+              ],
+              "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36748946,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User see error massage \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: Last Name is required",
+                  "offset": 24
+                }
+              ],
+              "location": "CheckOutFromStep.popUpErrorCheckoutForm(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckoutForm"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1065769892,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User Invalid input first name, last name, and partial code in checkout form",
+        "description": "",
+        "id": "input-checkout-form-flow;user-invalid-input-first-name,-last-name,-and-partial-code-in-checkout-form;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 100956464,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 89293561,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User open the website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1472936448,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1104836137,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User sort product list by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 27
+                }
+              ],
+              "location": "PurchaseSteps.sortProductValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1167455464,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User choice 2 product from the list",
+            "match": {
+              "location": "PurchaseSteps.choiceBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1069330459,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on icon cart to verify product",
+            "match": {
+              "location": "CheckoutStep.clickIconsCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1061752050,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click button checkout",
+            "match": {
+              "location": "CheckoutStep.clickOnCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2286949905,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"\".",
             "match": {
               "arguments": [
                 {
@@ -138,50 +494,592 @@
                   "offset": 59
                 },
                 {
-                  "val": "123",
+                  "val": "",
                   "offset": 87
                 }
               ],
               "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
             },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2078145454,
+              "duration": 37102117,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User click button finish",
+            "line": 21,
+            "name": "User see error massage \"Error: Postal Code is required\"",
             "match": {
-              "location": "CompleteStep.clickOnBtnFinish()"
+              "arguments": [
+                {
+                  "val": "Error: Postal Code is required",
+                  "offset": 24
+                }
+              ],
+              "location": "CheckOutFromStep.popUpErrorCheckoutForm(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckoutForm"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 984287624,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User Invalid input first name, last name, and partial code in checkout form",
+        "description": "",
+        "id": "input-checkout-form-flow;user-invalid-input-first-name,-last-name,-and-partial-code-in-checkout-form;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 100890796,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 229738701,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User open the website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1451312734,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1102094400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User sort product list by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 27
+                }
+              ],
+              "location": "PurchaseSteps.sortProductValue(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000428027,
+              "duration": 1162563907,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User choice 2 product from the list",
+            "match": {
+              "location": "PurchaseSteps.choiceBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1068523816,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on icon cart to verify product",
+            "match": {
+              "location": "CheckoutStep.clickIconsCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1062055384,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click button checkout",
+            "match": {
+              "location": "CheckoutStep.clickOnCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2263872666,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User input Check Out Form in Firs Name \"\", Last Name \"pradipto\" and Partial Code \"\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 40
+                },
+                {
+                  "val": "pradipto",
+                  "offset": 54
+                },
+                {
+                  "val": "",
+                  "offset": 82
+                }
+              ],
+              "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36191358,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User see error massage \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: First Name is required",
+                  "offset": 24
+                }
+              ],
+              "location": "CheckOutFromStep.popUpErrorCheckoutForm(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckoutForm"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1024378090,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User Invalid input first name, last name, and partial code in checkout form",
+        "description": "",
+        "id": "input-checkout-form-flow;user-invalid-input-first-name,-last-name,-and-partial-code-in-checkout-form;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 110189971,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 101650442,
               "status": "passed"
             },
             "line": 14,
-            "name": "User complete order",
+            "name": "User open the website sauce demo",
             "match": {
-              "location": "CompleteStep.verifyOnCheckOutCompletePage()"
+              "location": "LoginSteps.verifyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1661847934,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1111446554,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User sort product list by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 27
+                }
+              ],
+              "location": "PurchaseSteps.sortProductValue(String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1162344194,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User choice 2 product from the list",
+            "match": {
+              "location": "PurchaseSteps.choiceBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1068887348,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on icon cart to verify product",
+            "match": {
+              "location": "CheckoutStep.clickIconsCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1059497611,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click button checkout",
+            "match": {
+              "location": "CheckoutStep.clickOnCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2280437904,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User input Check Out Form in Firs Name \"\", Last Name \"pradipto\" and Partial Code \"12345\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 40
+                },
+                {
+                  "val": "pradipto",
+                  "offset": 54
+                },
+                {
+                  "val": "12345",
+                  "offset": 82
+                }
+              ],
+              "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37826562,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User see error massage \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: First Name is required",
+                  "offset": 24
+                }
+              ],
+              "location": "CheckOutFromStep.popUpErrorCheckoutForm(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckoutForm"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1002060014,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "User Invalid input first name, last name, and partial code in checkout form",
+        "description": "",
+        "id": "input-checkout-form-flow;user-invalid-input-first-name,-last-name,-and-partial-code-in-checkout-form;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 100831102,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 80343154,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User open the website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1472764941,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1101778644,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User sort product list by \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name (Z to A)",
+                  "offset": 27
+                }
+              ],
+              "location": "PurchaseSteps.sortProductValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1153423455,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User choice 2 product from the list",
+            "match": {
+              "location": "PurchaseSteps.choiceBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1073249863,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on icon cart to verify product",
+            "match": {
+              "location": "CheckoutStep.clickIconsCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1061019480,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click button checkout",
+            "match": {
+              "location": "CheckoutStep.clickOnCheckOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2258676921,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"\" and Partial Code \"12345\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kukuh",
+                  "offset": 40
+                },
+                {
+                  "val": "",
+                  "offset": 59
+                },
+                {
+                  "val": "12345",
+                  "offset": 79
+                }
+              ],
+              "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37615203,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User see error massage \"Error: Last Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Error: Last Name is required",
+                  "offset": 24
+                }
+              ],
+              "location": "CheckOutFromStep.popUpErrorCheckoutForm(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@CheckoutForm"
           }
         ]
       }
     ],
-    "name": "Completed order",
+    "name": "Input Checkout Form flow",
     "description": "",
-    "id": "completed-order",
+    "id": "input-checkout-form-flow",
     "keyword": "Feature",
-    "uri": "features/Complete.feature",
+    "uri": "features/CheckOutForm.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@Complete"
+        "name": "@CheckoutForm"
       }
     ]
   }

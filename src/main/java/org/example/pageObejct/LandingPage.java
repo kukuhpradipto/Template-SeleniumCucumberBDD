@@ -17,34 +17,38 @@ public class LandingPage {
 
     @FindBy(xpath = "//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")
     private WebElement basket1;
+    public void clickBasket1(){
+        basket1.click();
+    }
+
 
     @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-onesie']")
     private WebElement basket2;
+    public void clickBasket2(){
+        basket2.click();
+    }
+
+
+
+    @FindBy(xpath = ".//button[@id='add-to-cart-sauce-labs-fleece-jacket']")
+    private WebElement basket3;
+    public void clickBasket3(){
+        basket3.click();
+    }
+
 
     @FindBy(xpath ="//span[@class='title']")
     private WebElement vrfyLandingPage;
-
-    @FindBy(xpath = "//select[@class='product_sort_container']")
-    private WebElement selectContainer;
-
-
     public boolean verifyLandingPage(){
         vrfyLandingPage.isDisplayed();
         return true;
     }
 
+
+    @FindBy(xpath = "//select[@class='product_sort_container']")
+    private WebElement selectContainer;
     public void sortProduct(String sort){
-        selectContainer.click();
         Select a = new Select(selectContainer);
         a.selectByVisibleText(sort);
     }
-
-    public void clickBasket1(){
-        basket1.click();
-    }
-
-    public void clickBasket2(){
-        basket2.click();
-    }
-
 }

@@ -15,7 +15,6 @@ public class CartPage {
 
     @FindBy(css = ".shopping_cart_link")
     private WebElement iconsCart;
-
     public void clickCart (){
         iconsCart.click();
     }

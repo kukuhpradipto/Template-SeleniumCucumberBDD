@@ -16,15 +16,29 @@ public class LoginPage {
 
     @FindBy(xpath="//input[@id='user-name']")
     private WebElement userName;
+    public void setUserName(String user){
+        userName.sendKeys(user);
+    }
+
 
     @FindBy(xpath ="//input[@id='password']")
     private WebElement password;
+    public void setPassword(String psd){
+        password.sendKeys(psd);
+    }
+
 
     @FindBy(id ="login-button")
     private WebElement btnLogin;
+    public void clickLogin(){
+        btnLogin.click();
+    }
 
     @FindBy(xpath = "//h3")
     private WebElement errorText;
+    public String verifyErrorText(){
+        return errorText.getText();
+    }
 
 
     public boolean verifyLoginPage(){
@@ -32,21 +46,12 @@ public class LoginPage {
         return true;
     }
 
-    public void setUserName(String user){
-        userName.sendKeys(user);
-    }
 
-    public void setPassword(String psd){
-        password.sendKeys(psd);
-    }
 
-    public String verifyErrorText(){
-        return errorText.getText();
-    }
 
-    public void clickLogin(){
-        btnLogin.click();
-    }
+
+
+
 
 }
 
