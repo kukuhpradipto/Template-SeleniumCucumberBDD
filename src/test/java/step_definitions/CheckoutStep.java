@@ -3,6 +3,7 @@ package step_definitions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.example.pageObejct.CartPage;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class CheckoutStep {
@@ -33,6 +34,5 @@ public class CheckoutStep {
         cartPage.clickBtnCheckOut();
         Thread.sleep(1000);
     }
-
 
 }

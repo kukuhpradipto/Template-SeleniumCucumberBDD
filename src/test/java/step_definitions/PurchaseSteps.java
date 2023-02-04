@@ -36,7 +36,7 @@ public class PurchaseSteps {
         LandingPage landingPage = new LandingPage(webDriver);
         landingPage.clickBasket1();
         landingPage.clickBasket2();
-        landingPage.clickBasket3();
+//        landingPage.clickBasket3();
         Thread.sleep(1000);
     }
 

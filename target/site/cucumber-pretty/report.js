@@ -2,7 +2,7 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 3,
   "name": "Completed order",
-  "description": "",
+  "description": "As a user I want to completed buy product",
   "id": "completed-order",
   "keyword": "Feature",
   "tags": [
@@ -13,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 2240282907,
+  "duration": 2994278660,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 5,
+  "line": 6,
   "name": "user completed order product",
   "description": "",
   "id": "completed-order;user-completed-order-product",
@@ -25,52 +25,62 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "User open the website sauce demo",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "User input \"standard_user\" as userName and Input \"secret_sauce\" as password",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
+  "name": "User already on landing page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
   "name": "User sort product list by \"Name (Z to A)\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User choice 2 product from the list",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "User click on icon cart to verify product",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User delete product Test.allTheThings",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "User click button checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 15,
   "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"123\".",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 16,
+  "name": "User verify Sumary total Checkout",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
   "name": "User click button finish",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 18,
   "name": "User complete order",
   "keyword": "And "
 });
@@ -78,7 +88,7 @@ formatter.match({
   "location": "LoginSteps.verifyLogin()"
 });
 formatter.result({
-  "duration": 498700995,
+  "duration": 237875185,
   "status": "passed"
 });
 formatter.match({
@@ -95,7 +105,14 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 1535292899,
+  "duration": 1236434043,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PurchaseSteps.verifyLandingPage()"
+});
+formatter.result({
+  "duration": 40833822,
   "status": "passed"
 });
 formatter.match({
@@ -108,35 +125,35 @@ formatter.match({
   "location": "PurchaseSteps.sortProductValue(String)"
 });
 formatter.result({
-  "duration": 1155858565,
+  "duration": 1092961244,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.choiceBasket()"
 });
 formatter.result({
-  "duration": 1140631173,
+  "duration": 1125259464,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickIconsCart()"
 });
 formatter.result({
-  "duration": 1079668209,
+  "duration": 1071603430,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickOnDeleteProduct()"
 });
 formatter.result({
-  "duration": 1044138279,
+  "duration": 1048223403,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickOnCheckOut()"
 });
 formatter.result({
-  "duration": 1059360005,
+  "duration": 1061793542,
   "status": "passed"
 });
 formatter.match({
@@ -157,25 +174,32 @@ formatter.match({
   "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
 });
 formatter.result({
-  "duration": 2283404241,
+  "duration": 2282905873,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CompleteStep.verifyNominalTotal()"
+});
+formatter.result({
+  "duration": 33508376,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.clickOnBtnFinish()"
 });
 formatter.result({
-  "duration": 2078253028,
+  "duration": 5077603638,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.verifyOnCheckOutCompletePage()"
 });
 formatter.result({
-  "duration": 1000480778,
+  "duration": 1000652399,
   "status": "passed"
 });
 formatter.after({
-  "duration": 108741721,
+  "duration": 108522305,
   "status": "passed"
 });
 });

@@ -1,5 +1,6 @@
 @Sales
   Feature: sales flow
+    As i user I want to add 2 product from landing page
 
   Scenario Outline: User make a purchase with 2 item
     Given User open the website sauce demo
@@ -13,4 +14,3 @@
       | Name (A to Z)       |
       | Name (Z to A)       |
       | Price (high to low) |
-      |Price (low to high)  |
