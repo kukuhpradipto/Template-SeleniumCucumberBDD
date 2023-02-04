@@ -12,7 +12,7 @@
       And User click on icon cart to verify product
       Then User delete product Test.allTheThings
       And User click button checkout
-      Then User input Check Out Form in Firs Name "kukuh", Last Name "pradipto" and Partial Code "123".
-      And User verify Sumary total Checkout
+      Then User input Check Out Form in Firs Name "Kukuh", Last Name "Pradipto" and Partial Code "123".
+      And User verify Summary total Checkout
       And User click button finish
       And User complete order

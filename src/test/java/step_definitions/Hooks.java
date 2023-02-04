@@ -17,7 +17,10 @@ public class Hooks {
      String appUrl = "https://www.saucedemo.com/";
      webDriver.get(appUrl);
      webDriver.manage().window().maximize();
+
  }
+
+
 // untuk closing automation
 @After
     public void closeBrowser(){

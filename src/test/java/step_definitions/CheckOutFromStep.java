@@ -2,7 +2,6 @@ package step_definitions;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en_scouse.An;
 import org.example.pageObejct.CheckOutForm;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +25,6 @@ public class CheckOutFromStep {
         Thread.sleep(1000);
 
     }
-
 
     @And("User see error massage \"(.*)\"")
     public void popUpErrorCheckoutForm(String errorFormCheckout){

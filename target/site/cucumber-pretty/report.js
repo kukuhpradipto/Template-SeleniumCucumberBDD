@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 2994278660,
+  "duration": 2077485227,
   "status": "passed"
 });
 formatter.scenario({
@@ -55,23 +55,24 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
-  "name": "User delete product Test.allTheThings",
-  "keyword": "Then "
-});
-formatter.step({
+  "comments": [
+    {
+      "line": 13,
+      "value": "#      Then User delete product Test.allTheThings"
+    }
+  ],
   "line": 14,
   "name": "User click button checkout",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"123\".",
+  "name": "User input Check Out Form in Firs Name \"Kukuh\", Last Name \"Pradipto\" and Partial Code \"123\".",
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "User verify Sumary total Checkout",
+  "name": "User verify Summary total Checkout",
   "keyword": "And "
 });
 formatter.step({
@@ -88,7 +89,7 @@ formatter.match({
   "location": "LoginSteps.verifyLogin()"
 });
 formatter.result({
-  "duration": 237875185,
+  "duration": 349599351,
   "status": "passed"
 });
 formatter.match({
@@ -105,14 +106,14 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 1236434043,
+  "duration": 1720995804,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.verifyLandingPage()"
 });
 formatter.result({
-  "duration": 40833822,
+  "duration": 33453279,
   "status": "passed"
 });
 formatter.match({
@@ -125,45 +126,38 @@ formatter.match({
   "location": "PurchaseSteps.sortProductValue(String)"
 });
 formatter.result({
-  "duration": 1092961244,
+  "duration": 1087604232,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.choiceBasket()"
 });
 formatter.result({
-  "duration": 1125259464,
+  "duration": 1079986707,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickIconsCart()"
 });
 formatter.result({
-  "duration": 1071603430,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CheckoutStep.clickOnDeleteProduct()"
-});
-formatter.result({
-  "duration": 1048223403,
+  "duration": 1063250952,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickOnCheckOut()"
 });
 formatter.result({
-  "duration": 1061793542,
+  "duration": 1047341011,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "kukuh",
+      "val": "Kukuh",
       "offset": 40
     },
     {
-      "val": "pradipto",
+      "val": "Pradipto",
       "offset": 59
     },
     {
@@ -174,32 +168,32 @@ formatter.match({
   "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
 });
 formatter.result({
-  "duration": 2282905873,
+  "duration": 2235886665,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.verifyNominalTotal()"
 });
 formatter.result({
-  "duration": 33508376,
+  "duration": 67983265,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.clickOnBtnFinish()"
 });
 formatter.result({
-  "duration": 5077603638,
+  "duration": 3046551097,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.verifyOnCheckOutCompletePage()"
 });
 formatter.result({
-  "duration": 1000652399,
+  "duration": 1000554804,
   "status": "passed"
 });
 formatter.after({
-  "duration": 108522305,
+  "duration": 110679089,
   "status": "passed"
 });
 });

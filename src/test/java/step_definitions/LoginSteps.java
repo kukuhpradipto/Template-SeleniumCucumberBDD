@@ -16,6 +16,12 @@ public class LoginSteps {
         this.webDriver = Hooks.webDriver;
     }
 
+    @Given("User open the website sauce demo") // verifiy tulisan Username
+    public void verifyLogin(){
+        LoginPage loginPage = new LoginPage(webDriver);
+        Assert.assertTrue(loginPage.verifyLoginPage());
+    }
+
     @When("User input \"(.*)\" as userName and Input \"(.*)\" as password")
     public void inputCredential(String userName, String password) throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
@@ -23,13 +29,6 @@ public class LoginSteps {
         loginPage.setPassword(password);
         loginPage.clickLogin();
         Thread.sleep(1000);
-
-    }
-
-    @Given("User open the website sauce demo") // verifiy tulisan Username
-    public void verifyLogin(){
-        LoginPage loginPage = new LoginPage(webDriver);
-        Assert.assertTrue(loginPage.verifyLoginPage());
     }
 
     @Then("User see error \"(.*)\" on login page" )

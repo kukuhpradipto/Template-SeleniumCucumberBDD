@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2994278660,
+              "duration": 2077485227,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 108522305,
+              "duration": 110679089,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 237875185,
+              "duration": 349599351,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1236434043,
+              "duration": 1720995804,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 40833822,
+              "duration": 33453279,
               "status": "passed"
             },
             "line": 9,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 1092961244,
+              "duration": 1087604232,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1125259464,
+              "duration": 1079986707,
               "status": "passed"
             },
             "line": 11,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 1071603430,
+              "duration": 1063250952,
               "status": "passed"
             },
             "line": 12,
@@ -122,21 +122,15 @@
           },
           {
             "result": {
-              "duration": 1048223403,
+              "duration": 1047341011,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User delete product Test.allTheThings",
-            "match": {
-              "location": "CheckoutStep.clickOnDeleteProduct()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1061793542,
-              "status": "passed"
-            },
+            "comments": [
+              {
+                "line": 13,
+                "value": "#      Then User delete product Test.allTheThings"
+              }
+            ],
             "line": 14,
             "name": "User click button checkout",
             "match": {
@@ -146,19 +140,19 @@
           },
           {
             "result": {
-              "duration": 2282905873,
+              "duration": 2235886665,
               "status": "passed"
             },
             "line": 15,
-            "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"123\".",
+            "name": "User input Check Out Form in Firs Name \"Kukuh\", Last Name \"Pradipto\" and Partial Code \"123\".",
             "match": {
               "arguments": [
                 {
-                  "val": "kukuh",
+                  "val": "Kukuh",
                   "offset": 40
                 },
                 {
-                  "val": "pradipto",
+                  "val": "Pradipto",
                   "offset": 59
                 },
                 {
@@ -172,11 +166,11 @@
           },
           {
             "result": {
-              "duration": 33508376,
+              "duration": 67983265,
               "status": "passed"
             },
             "line": 16,
-            "name": "User verify Sumary total Checkout",
+            "name": "User verify Summary total Checkout",
             "match": {
               "location": "CompleteStep.verifyNominalTotal()"
             },
@@ -184,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 5077603638,
+              "duration": 3046551097,
               "status": "passed"
             },
             "line": 17,
@@ -196,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 1000652399,
+              "duration": 1000554804,
               "status": "passed"
             },
             "line": 18,

@@ -34,8 +34,8 @@ public class PurchaseSteps {
     @And("User choice 2 product from the list")
     public void choiceBasket() throws InterruptedException {
         LandingPage landingPage = new LandingPage(webDriver);
-        landingPage.clickBasket1();
         landingPage.clickBasket2();
+        landingPage.clickBasket1();
 //        landingPage.clickBasket3();
         Thread.sleep(1000);
     }

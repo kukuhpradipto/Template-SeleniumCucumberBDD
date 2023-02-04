@@ -27,24 +27,32 @@ public class CartPage {
     }
 
 
-//    @FindBy(xpath = "//div[@class='summary_subtotal_label']")
-//    private WebElement itemTotal;
-//    public int nominalItemTotal(){
-//        return Integer.parseInt(itemTotal.getText());
-//    }
-//
-//    @FindBy(xpath = "//div[@class='summary_subtotal_label']")
-//    private WebElement taxLabel;
-//    public int nominalTaxLabel(){
-//       return Integer.parseInt(taxLabel.getText());
-//    };
+    @FindBy(xpath = "//div[@class='summary_subtotal_label']")
+    private WebElement itemTotal;
+    public Float numberItemTotal(){
+        String a = itemTotal.getText();
+        String b = a.replaceAll("[^0-9.]", "");
+        float c = Float.parseFloat(b);
+        return c;
+    }
+
+    @FindBy(xpath = "//div[@class='summary_tax_label']")
+    private WebElement taxLabel;
+    public Float numberSTaxLabel(){
+        String a = taxLabel.getText();
+        String b = a.replaceAll("[^0-9.]", "");
+        float c = Float.parseFloat(b);
+        return c;
+    }
 
     @FindBy(xpath = "//div[@class='summary_total_label']")
     private WebElement total;
-    public String nominalTotal(){
-        return total.getText();
+    public Float nominalTotal(){
+        String a = total.getText();
+        String b = a.replaceAll("[^0-9.]", "");
+        float c = Float.parseFloat(b);
+        return c;
     }
-
 
     @FindBy(xpath = "//button[@id='checkout']")
     private WebElement btnCheckOut;
