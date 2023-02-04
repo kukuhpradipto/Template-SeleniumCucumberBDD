@@ -30,28 +30,28 @@ public class CartPage {
     @FindBy(xpath = "//div[@class='summary_subtotal_label']")
     private WebElement itemTotal;
     public Float numberItemTotal(){
-        String a = itemTotal.getText();
-        String b = a.replaceAll("[^0-9.]", "");
-        float c = Float.parseFloat(b);
-        return c;
+        String text = itemTotal.getText();
+        String number = text.replaceAll("[^.0-9]", "");
+        float numbers = Float.parseFloat(number);
+        return numbers;
     }
 
     @FindBy(xpath = "//div[@class='summary_tax_label']")
     private WebElement taxLabel;
     public Float numberSTaxLabel(){
-        String a = taxLabel.getText();
-        String b = a.replaceAll("[^0-9.]", "");
-        float c = Float.parseFloat(b);
-        return c;
+        String text = taxLabel.getText();
+        String number = text.replaceAll("[^.0-9]", "");
+        float numbers = Float.parseFloat(number);
+        return numbers;
     }
 
     @FindBy(xpath = "//div[@class='summary_total_label']")
     private WebElement total;
     public Float nominalTotal(){
-        String a = total.getText();
-        String b = a.replaceAll("[^0-9.]", "");
-        float c = Float.parseFloat(b);
-        return c;
+        String text = total.getText();
+        String number = text.replaceAll("[^.0-9]", "");
+        float numbers = Float.parseFloat(number);
+        return numbers;
     }
 
     @FindBy(xpath = "//button[@id='checkout']")

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2077485227,
+              "duration": 3965168643,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 110679089,
+              "duration": 108383191,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 349599351,
+              "duration": 222295710,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1720995804,
+              "duration": 1316728228,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 33453279,
+              "duration": 47281120,
               "status": "passed"
             },
             "line": 9,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 1087604232,
+              "duration": 1169267501,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1079986707,
+              "duration": 1130985828,
               "status": "passed"
             },
             "line": 11,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 1063250952,
+              "duration": 1074129252,
               "status": "passed"
             },
             "line": 12,
@@ -122,15 +122,21 @@
           },
           {
             "result": {
-              "duration": 1047341011,
+              "duration": 1053777619,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 13,
-                "value": "#      Then User delete product Test.allTheThings"
-              }
-            ],
+            "line": 13,
+            "name": "User delete product Test.allTheThings",
+            "match": {
+              "location": "CheckoutStep.clickOnDeleteProduct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1062197855,
+              "status": "passed"
+            },
             "line": 14,
             "name": "User click button checkout",
             "match": {
@@ -140,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 2235886665,
+              "duration": 2310638717,
               "status": "passed"
             },
             "line": 15,
@@ -166,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 67983265,
+              "duration": 84214540,
               "status": "passed"
             },
             "line": 16,
@@ -178,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 3046551097,
+              "duration": 5085623632,
               "status": "passed"
             },
             "line": 17,
@@ -190,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 1000554804,
+              "duration": 1000473791,
               "status": "passed"
             },
             "line": 18,
