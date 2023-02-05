@@ -16,6 +16,12 @@ public class CompleteStep {
         this.webDriver = Hooks.webDriver;
     }
 
+    @And("User verify nominal taxt")
+    public void verifyNominalTax(){
+        CartPage cartPage = new CartPage(webDriver);
+        Assert.assertEquals(cartPage.numberSTaxLabel(),cartPage.setNominalTax(),0);
+    }
+
     @And("User verify Summary total Checkout")
     public void verifyNominalTotal(){
         CartPage cartPage = new CartPage(webDriver);

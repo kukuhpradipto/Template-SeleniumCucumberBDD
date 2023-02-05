@@ -9,6 +9,6 @@
       And User sort product list by "Name (Z to A)"
       And User choice 2 product from the list
       And User click on icon cart to verify product
-      Then User delete product Test.allTheThings
+      Then User delete product "<deleteProduct>"
       And User click button checkout
 

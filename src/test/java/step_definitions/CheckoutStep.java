@@ -4,7 +4,9 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.example.pageObejct.CartPage;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class CheckoutStep {
 
@@ -21,10 +23,9 @@ public class CheckoutStep {
         Thread.sleep(1000);
     }
 
-    @Then("User delete product Test.allTheThings")
-    public void clickOnDeleteProduct() throws InterruptedException {
-        CartPage cartPage = new CartPage(webDriver);
-        cartPage.clickDeleteProduct();
+    @Then("User delete product \"(.*)\"")
+    public void deleteProduct(String product) throws InterruptedException {
+        WebElement setDeleteProduct = webDriver.findElement(By.xpath("//div[text()='"+product+"']/ancestor::div[@class='cart_item_label']/child::div/button"));
         Thread.sleep(1000);
     }
 

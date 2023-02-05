@@ -29,14 +29,6 @@ public class LandingPage {
     }
 
 
-
-//    @FindBy(xpath = ".//button[@id='add-to-cart-sauce-labs-fleece-jacket']")
-//    private WebElement basket3;
-//    public void clickBasket3(){
-//        basket3.click();
-//    }
-
-
     @FindBy(xpath ="//span[@class='title']")
     private WebElement vrfyLandingPage;
     public boolean verifyLandingPage(){

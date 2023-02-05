@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.text.DecimalFormat;
+
 public class CartPage {
 
     public static WebDriver driver;
@@ -29,30 +31,43 @@ public class CartPage {
 
     @FindBy(xpath = "//div[@class='summary_subtotal_label']")
     private WebElement itemTotal;
-    public Float numberItemTotal(){
+    public double numberItemTotal(){
         String text = itemTotal.getText();
         String number = text.replaceAll("[^.0-9]", "");
         float numbers = Float.parseFloat(number);
-        return numbers;
+        double angkaTax = Double.parseDouble(new DecimalFormat("##.##").format(numbers));
+        return angkaTax;
+    }
+
+    public double setNominalTax(){
+        String text = itemTotal.getText();
+        String number = text.replaceAll("[^.0-9]", "");
+        float numbers = Float.parseFloat(number);
+        double x = numbers * 0.08;
+        double angkaTax = Double.parseDouble(new DecimalFormat("##.##").format(x));
+        return angkaTax;
     }
 
     @FindBy(xpath = "//div[@class='summary_tax_label']")
     private WebElement taxLabel;
-    public Float numberSTaxLabel(){
+    public double numberSTaxLabel(){
         String text = taxLabel.getText();
         String number = text.replaceAll("[^.0-9]", "");
         float numbers = Float.parseFloat(number);
-        return numbers;
+        double angkaTax = Double.parseDouble(new DecimalFormat("##.##").format(numbers));
+        return angkaTax;
     }
 
     @FindBy(xpath = "//div[@class='summary_total_label']")
     private WebElement total;
-    public Float nominalTotal(){
+    public double nominalTotal(){
         String text = total.getText();
         String number = text.replaceAll("[^.0-9]", "");
         float numbers = Float.parseFloat(number);
-        return numbers;
+        double angkaTax = Double.parseDouble(new DecimalFormat("##.##").format(numbers));
+        return angkaTax;
     }
+
 
     @FindBy(xpath = "//button[@id='checkout']")
     private WebElement btnCheckOut;

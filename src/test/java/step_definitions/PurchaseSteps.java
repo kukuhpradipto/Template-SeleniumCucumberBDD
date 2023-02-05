@@ -5,7 +5,10 @@ import cucumber.api.java.en.Then;
 import org.example.pageObejct.LandingPage;
 import org.example.pageObejct.LoginPage;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class PurchaseSteps {
 
@@ -18,7 +21,6 @@ public class PurchaseSteps {
 
     @Then("User already on landing page")  // identitas final method
     public void verifyLandingPage(){ // final method
-//        LoginPage loginPage = new LoginPage(webDriver);
         LandingPage landingPage = new LandingPage(webDriver);
         Assert.assertTrue(landingPage.verifyLandingPage());
     }
@@ -36,8 +38,13 @@ public class PurchaseSteps {
         LandingPage landingPage = new LandingPage(webDriver);
         landingPage.clickBasket2();
         landingPage.clickBasket1();
-//        landingPage.clickBasket3();
         Thread.sleep(1000);
+    }
+
+    @And("User choice 2 product from the list \"(^.*$)\" and \"(^.*$)\"")
+    public void addItemToCart(String itemTshirt) {
+        WebElement a = webDriver.findElement(By.xpath("//div[text()='"+itemTshirt+"']/ancestor::div[@class='inventory_item_label']/following-sibling::div/button"));
+        a.click();
     }
 
 }

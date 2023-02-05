@@ -40,7 +40,6 @@ public class LoginPage {
         return errorText.getText();
     }
 
-
     public boolean verifyLoginPage(){
         userName.isDisplayed();
         return true;
