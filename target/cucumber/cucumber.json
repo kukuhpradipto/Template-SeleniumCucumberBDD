@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2080175583,
+              "duration": 3503641095,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 131388554,
+              "duration": 121908508,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 411197094,
+              "duration": 348375965,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1339061729,
+              "duration": 1360883109,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 30705453,
+              "duration": 35763264,
               "status": "passed"
             },
             "line": 9,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 1082910275,
+              "duration": 1113216188,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1077389010,
+              "duration": 1132364030,
               "status": "passed"
             },
             "line": 11,
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 1059307905,
+              "duration": 1061991586,
               "status": "passed"
             },
             "line": 12,
@@ -126,15 +126,15 @@
           },
           {
             "result": {
-              "duration": 1047188668,
+              "duration": 1050321338,
               "status": "passed"
             },
             "line": 13,
-            "name": "User delete product \"Sauce Labs Onesie\"",
+            "name": "User delete product \"Test.allTheThings() T-Shirt (Red)\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Sauce Labs Onesie",
+                  "val": "Test.allTheThings() T-Shirt (Red)",
                   "offset": 21
                 }
               ],
@@ -147,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 1050984716,
+              "duration": 1053429697,
               "status": "passed"
             },
             "line": 14,
@@ -159,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 2260211190,
+              "duration": 2252020822,
               "status": "passed"
             },
             "line": 15,
@@ -185,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 49734764,
+              "duration": 45788191,
               "status": "passed"
             },
             "line": 16,
@@ -197,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 40450111,
+              "duration": 40874017,
               "status": "passed"
             },
             "line": 17,
@@ -209,7 +209,7 @@
           },
           {
             "result": {
-              "duration": 5069467471,
+              "duration": 5074787337,
               "status": "passed"
             },
             "line": 18,
@@ -221,7 +221,7 @@
           },
           {
             "result": {
-              "duration": 1000799167,
+              "duration": 1000529502,
               "status": "passed"
             },
             "line": 19,

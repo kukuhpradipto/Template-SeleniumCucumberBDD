@@ -11,7 +11,7 @@ public class Hooks {
 
  @Before
     public void openBrowser(){
-     System.setProperty("webdriver.chrome.driver","/home/kukuh/AlteraAcademy/Automation/BDDSourceDemo/driver/chromedriver");
+     System.setProperty("webdriver.chrome.driver","/home/kukuh/AlteraAcademy/Automation/Saucedemo/driver/chromedriver");
 
      webDriver = new ChromeDriver();
      String appUrl = "https://www.saucedemo.com/";

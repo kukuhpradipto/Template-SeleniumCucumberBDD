@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="0" name="step_definitions.RunCukesTest" time="0.138" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="step_definitions.RunCukesTest" time="0.128" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.361-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/kukuh/AlteraAcademy/Automation/BDDSourceDemo"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/kukuh/AlteraAcademy/Automation/Saucedemo"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/kukuh/AlteraAcademy/Automation/BDDSourceDemo"/>
+    <property name="user.dir" value="/home/kukuh/AlteraAcademy/Automation/Saucedemo"/>
     <property name="java.runtime.version" value="1.8.0_361-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/jdk1.8.0_361/jre/lib/endorsed"/>
@@ -62,18 +62,18 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Given User open the website sauce demo(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="Given User open the website sauce demo(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0.002"/>
-  <testcase classname="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0.001"/>
-  <testcase classname="Then User already on landing page(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="Then User already on landing page(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="And User sort product list by &quot;Name (Z to A)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User sort product list by &quot;Name (Z to A)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="And User choice 2 product from the list &quot;Sauce Labs Onesie&quot; and &quot;Test.allTheThings() T-Shirt (Red)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User choice 2 product from the list &quot;Sauce Labs Onesie&quot; and &quot;Test.allTheThings() T-Shirt (Red)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="And User click on icon cart to verify product(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User click on icon cart to verify product(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="Then User delete product &quot;Sauce Labs Onesie&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="Then User delete product &quot;Sauce Labs Onesie&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0.001"/>
-  <testcase classname="And User click button checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User click button checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="Then User input Check Out Form in Firs Name &quot;Kukuh&quot;, Last Name &quot;Pradipto&quot; and Partial Code &quot;123&quot;.(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="Then User input Check Out Form in Firs Name &quot;Kukuh&quot;, Last Name &quot;Pradipto&quot; and Partial Code &quot;123&quot;.(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="And User verify nominal taxt(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User verify nominal taxt(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0.001"/>
-  <testcase classname="And User verify Summary total Checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User verify Summary total Checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="And User click button finish(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User click button finish(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="And User complete order(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |)" name="And User complete order(| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0"/>
-  <testcase classname="| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |" name="| Sauce Labs Onesie | Test.allTheThings() T-Shirt " time="0.133"/>
+  <testcase classname="Given User open the website sauce demo(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="Given User open the website sauce demo(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0.002"/>
+  <testcase classname="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="When User input &quot;standard_user&quot; as userName and Input &quot;secret_sauce&quot; as password(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="Then User already on landing page(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="Then User already on landing page(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User sort product list by &quot;Name (Z to A)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User sort product list by &quot;Name (Z to A)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0.003"/>
+  <testcase classname="And User choice 2 product from the list &quot;Sauce Labs Onesie&quot; and &quot;Test.allTheThings() T-Shirt (Red)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User choice 2 product from the list &quot;Sauce Labs Onesie&quot; and &quot;Test.allTheThings() T-Shirt (Red)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User click on icon cart to verify product(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User click on icon cart to verify product(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="Then User delete product &quot;Test.allTheThings() T-Shirt (Red)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="Then User delete product &quot;Test.allTheThings() T-Shirt (Red)&quot;(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User click button checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User click button checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="Then User input Check Out Form in Firs Name &quot;Kukuh&quot;, Last Name &quot;Pradipto&quot; and Partial Code &quot;123&quot;.(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="Then User input Check Out Form in Firs Name &quot;Kukuh&quot;, Last Name &quot;Pradipto&quot; and Partial Code &quot;123&quot;.(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User verify nominal taxt(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User verify nominal taxt(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User verify Summary total Checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User verify Summary total Checkout(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User click button finish(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User click button finish(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="And User complete order(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |)" name="And User complete order(| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0"/>
+  <testcase classname="| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |" name="| Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt " time="0.123"/>
 </testsuite>
