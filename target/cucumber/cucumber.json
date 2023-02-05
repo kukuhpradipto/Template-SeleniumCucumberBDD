@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 1940492287,
+              "duration": 2080175583,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 25,
+        "line": 23,
         "name": "user completed order product",
         "description": "",
         "id": "completed-order;user-completed-order-product;;2",
         "after": [
           {
             "result": {
-              "duration": 108623296,
+              "duration": 131388554,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 352093459,
+              "duration": 411197094,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1454056068,
+              "duration": 1339061729,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 42993477,
+              "duration": 30705453,
               "status": "passed"
             },
             "line": 9,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 1099906114,
+              "duration": 1082910275,
               "status": "passed"
             },
             "line": 10,
@@ -98,16 +98,10 @@
           },
           {
             "result": {
-              "duration": 1081761296,
+              "duration": 1077389010,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 11,
-                "value": "#      And User choice 2 product from the list"
-              }
-            ],
-            "line": 12,
+            "line": 11,
             "name": "User choice 2 product from the list \"Sauce Labs Onesie\" and \"Test.allTheThings() T-Shirt (Red)\"",
             "match": {
               "location": "PurchaseSteps.choiceBasket()"
@@ -120,10 +114,10 @@
           },
           {
             "result": {
-              "duration": 1058838252,
+              "duration": 1059307905,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "User click on icon cart to verify product",
             "match": {
               "location": "CheckoutStep.clickIconsCart()"
@@ -132,21 +126,15 @@
           },
           {
             "result": {
-              "duration": 1023076287,
+              "duration": 1047188668,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 14,
-                "value": "#      Then User delete product Test.allTheThings"
-              }
-            ],
-            "line": 15,
-            "name": "User delete product \"Test.allTheThings() T-Shirt (Red)\"",
+            "line": 13,
+            "name": "User delete product \"Sauce Labs Onesie\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Test.allTheThings() T-Shirt (Red)",
+                  "val": "Sauce Labs Onesie",
                   "offset": 21
                 }
               ],
@@ -159,10 +147,10 @@
           },
           {
             "result": {
-              "duration": 1055252480,
+              "duration": 1050984716,
               "status": "passed"
             },
-            "line": 16,
+            "line": 14,
             "name": "User click button checkout",
             "match": {
               "location": "CheckoutStep.clickOnCheckOut()"
@@ -171,10 +159,10 @@
           },
           {
             "result": {
-              "duration": 2260087139,
+              "duration": 2260211190,
               "status": "passed"
             },
-            "line": 17,
+            "line": 15,
             "name": "User input Check Out Form in Firs Name \"Kukuh\", Last Name \"Pradipto\" and Partial Code \"123\".",
             "match": {
               "arguments": [
@@ -197,10 +185,10 @@
           },
           {
             "result": {
-              "duration": 54001389,
+              "duration": 49734764,
               "status": "passed"
             },
-            "line": 18,
+            "line": 16,
             "name": "User verify nominal taxt",
             "match": {
               "location": "CompleteStep.verifyNominalTax()"
@@ -209,10 +197,10 @@
           },
           {
             "result": {
-              "duration": 42061018,
+              "duration": 40450111,
               "status": "passed"
             },
-            "line": 19,
+            "line": 17,
             "name": "User verify Summary total Checkout",
             "match": {
               "location": "CompleteStep.verifyNominalTotal()"
@@ -221,10 +209,10 @@
           },
           {
             "result": {
-              "duration": 5074753732,
+              "duration": 5069467471,
               "status": "passed"
             },
-            "line": 20,
+            "line": 18,
             "name": "User click button finish",
             "match": {
               "location": "CompleteStep.clickOnBtnFinish()"
@@ -233,10 +221,10 @@
           },
           {
             "result": {
-              "duration": 1000541053,
+              "duration": 1000799167,
               "status": "passed"
             },
-            "line": 21,
+            "line": 19,
             "name": "User complete order",
             "match": {
               "location": "CompleteStep.verifyOnCheckOutCompletePage()"

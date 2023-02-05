@@ -41,64 +41,52 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 11,
-      "value": "#      And User choice 2 product from the list"
-    }
-  ],
-  "line": 12,
+  "line": 11,
   "name": "User choice 2 product from the list \"\u003cproduk1\u003e\" and \"\u003cproduk2\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "User click on icon cart to verify product",
   "keyword": "And "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 14,
-      "value": "#      Then User delete product Test.allTheThings"
-    }
-  ],
-  "line": 15,
+  "line": 13,
   "name": "User delete product \"\u003cdeleteProduct\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 14,
   "name": "User click button checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "User input Check Out Form in Firs Name \"Kukuh\", Last Name \"Pradipto\" and Partial Code \"123\".",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 16,
   "name": "User verify nominal taxt",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 17,
   "name": "User verify Summary total Checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 18,
   "name": "User click button finish",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 19,
   "name": "User complete order",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 23,
+  "line": 21,
   "name": "",
   "description": "",
   "id": "completed-order;user-completed-order-product;",
@@ -109,27 +97,27 @@ formatter.examples({
         "produk2",
         "deleteProduct"
       ],
-      "line": 24,
+      "line": 22,
       "id": "completed-order;user-completed-order-product;;1"
     },
     {
       "cells": [
         "Sauce Labs Onesie",
         "Test.allTheThings() T-Shirt (Red)",
-        "Test.allTheThings() T-Shirt (Red)"
+        "Sauce Labs Onesie"
       ],
-      "line": 25,
+      "line": 23,
       "id": "completed-order;user-completed-order-product;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1940492287,
+  "duration": 2080175583,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
+  "line": 23,
   "name": "user completed order product",
   "description": "",
   "id": "completed-order;user-completed-order-product;;2",
@@ -163,13 +151,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 11,
-      "value": "#      And User choice 2 product from the list"
-    }
-  ],
-  "line": 12,
+  "line": 11,
   "name": "User choice 2 product from the list \"Sauce Labs Onesie\" and \"Test.allTheThings() T-Shirt (Red)\"",
   "matchedColumns": [
     0,
@@ -178,51 +160,45 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "User click on icon cart to verify product",
   "keyword": "And "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 14,
-      "value": "#      Then User delete product Test.allTheThings"
-    }
-  ],
-  "line": 15,
-  "name": "User delete product \"Test.allTheThings() T-Shirt (Red)\"",
+  "line": 13,
+  "name": "User delete product \"Sauce Labs Onesie\"",
   "matchedColumns": [
     2
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 14,
   "name": "User click button checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "User input Check Out Form in Firs Name \"Kukuh\", Last Name \"Pradipto\" and Partial Code \"123\".",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 16,
   "name": "User verify nominal taxt",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 17,
   "name": "User verify Summary total Checkout",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 18,
   "name": "User click button finish",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 19,
   "name": "User complete order",
   "keyword": "And "
 });
@@ -230,7 +206,7 @@ formatter.match({
   "location": "LoginSteps.verifyLogin()"
 });
 formatter.result({
-  "duration": 352093459,
+  "duration": 411197094,
   "status": "passed"
 });
 formatter.match({
@@ -247,14 +223,14 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 1454056068,
+  "duration": 1339061729,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.verifyLandingPage()"
 });
 formatter.result({
-  "duration": 42993477,
+  "duration": 30705453,
   "status": "passed"
 });
 formatter.match({
@@ -267,41 +243,41 @@ formatter.match({
   "location": "PurchaseSteps.sortProductValue(String)"
 });
 formatter.result({
-  "duration": 1099906114,
+  "duration": 1082910275,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.choiceBasket()"
 });
 formatter.result({
-  "duration": 1081761296,
+  "duration": 1077389010,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickIconsCart()"
 });
 formatter.result({
-  "duration": 1058838252,
+  "duration": 1059307905,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Test.allTheThings() T-Shirt (Red)",
+      "val": "Sauce Labs Onesie",
       "offset": 21
     }
   ],
   "location": "CheckoutStep.deleteProduct(String)"
 });
 formatter.result({
-  "duration": 1023076287,
+  "duration": 1047188668,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutStep.clickOnCheckOut()"
 });
 formatter.result({
-  "duration": 1055252480,
+  "duration": 1050984716,
   "status": "passed"
 });
 formatter.match({
@@ -322,39 +298,39 @@ formatter.match({
   "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
 });
 formatter.result({
-  "duration": 2260087139,
+  "duration": 2260211190,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.verifyNominalTax()"
 });
 formatter.result({
-  "duration": 54001389,
+  "duration": 49734764,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.verifyNominalTotal()"
 });
 formatter.result({
-  "duration": 42061018,
+  "duration": 40450111,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.clickOnBtnFinish()"
 });
 formatter.result({
-  "duration": 5074753732,
+  "duration": 5069467471,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteStep.verifyOnCheckOutCompletePage()"
 });
 formatter.result({
-  "duration": 1000541053,
+  "duration": 1000799167,
   "status": "passed"
 });
 formatter.after({
-  "duration": 108623296,
+  "duration": 131388554,
   "status": "passed"
 });
 });

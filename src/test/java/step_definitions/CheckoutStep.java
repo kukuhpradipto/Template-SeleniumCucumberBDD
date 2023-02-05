@@ -26,6 +26,7 @@ public class CheckoutStep {
     @Then("User delete product \"(.*)\"")
     public void deleteProduct(String product) throws InterruptedException {
         WebElement setDeleteProduct = webDriver.findElement(By.xpath("//div[text()='"+product+"']/ancestor::div[@class='cart_item_label']/child::div/button"));
+        setDeleteProduct.click();
         Thread.sleep(1000);
     }
 
