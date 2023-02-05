@@ -19,5 +19,5 @@
       And User complete order
 
       Examples:
-        | produk1           | produk2                           | deleteProduct     |
-        | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Sauce Labs Onesie |
+        | produk1           | produk2                           | deleteProduct                     |
+        | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |
