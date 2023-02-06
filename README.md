@@ -22,25 +22,25 @@ Add the feature file under `features/Complete.feature`
 @Complete
 
   Feature: Completed order
-        As a user I want to completed buy product 
-        Scenario Outline: user completed order product
+         As a user I want to completed buy product 
+      Scenario Outline: user completed order product 
         Given User open the website sauce demo
         When User input "standard_user" as userName and Input "secret_sauce" as password
         Then User already on landing page
-        And User sort product list by "Name (Z to A)"
-        And User choice 2 product from the list "<produk1>" and "<produk2>"
-        And User click on icon cart to verify product
-        Then User delete product "<deleteProduct>"
+        When User choose product list by "<produkList>"
+        And User choice 2 product from the list "<produk>" and "<produkk>"
+        Then User click on icon cart to verify product
+        And User delete product "<deleteProduct>"
         And User click button checkout
-        Then User input Check Out Form in Firs Name "Kukuh", Last Name "Pradipto" and Partial Code "123".
+        When User input Check Out Form in Firs Name "<firstName>", Last Name "<lastName>" and Partial Code "<partialCode>".
         And User verify nominal taxt
         And User verify Summary total Checkout
         And User click button finish
-        And User complete order
+        Then User complete order
 
         Examples:
-        | produk1           | produk2                           | deleteProduct                     |
-        | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |
+        | produk            | produkk                           | deleteProduct                     | produkList    | firstName | lastName | partialCode |
+        | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) | Name (Z to A) | kukuh     | pradipto | 12345       |
 ```
 
 ### To see this project and run this command:
@@ -49,11 +49,17 @@ Add the feature file under `features/Complete.feature`
 and
 `mvn test`
 
-### Cucumber Report
 
-There is a feature overview page:
 
-![feature overview page](https://user-images.githubusercontent.com/114077446/216812437-02ba2e15-bf3b-4672-b7cf-20635d672ed8.png)
+### Record run the testing https://youtu.be/ajfAbF5fl4c
+
+
+
+## Cucumber Report
+
+There is a feature statistics:
+
+![feature statistics](https://user-images.githubusercontent.com/114077446/216812437-02ba2e15-bf3b-4672-b7cf-20635d672ed8.png)
 
 There is a tag report:
 

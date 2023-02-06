@@ -1,5 +1,4 @@
-org/example/pageObejct/LoginPage.class
-org/example/pageObejct/CartPage.class
-org/example/pageObejct/LandingPage.class
-org/example/pageObejct/CheckOutForm.class
-org/example/pageObejct/CompletePage.class
+pageObject/CompletePage.class
+pageObject/CheckOutPage.class
+pageObject/LandingPage.class
+pageObject/LoginPage.class

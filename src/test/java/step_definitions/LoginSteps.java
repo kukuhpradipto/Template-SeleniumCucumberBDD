@@ -3,7 +3,7 @@ package step_definitions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.example.pageObejct.LoginPage;
+import pageObject.LoginPage;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -31,6 +31,7 @@ public class LoginSteps {
         Thread.sleep(1000);
     }
 
+    //IF ERROR
     @Then("User see error \"(.*)\" on login page" )
     public void verifyErrorText( String errorText){
         LoginPage loginPage = new LoginPage(webDriver);

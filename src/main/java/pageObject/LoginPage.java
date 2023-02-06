@@ -1,4 +1,4 @@
-package org.example.pageObejct;
+package pageObject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,23 +34,17 @@ public class LoginPage {
         btnLogin.click();
     }
 
+
     @FindBy(xpath = "//h3")
     private WebElement errorText;
     public String verifyErrorText(){
         return errorText.getText();
     }
 
+
     public boolean verifyLoginPage(){
         userName.isDisplayed();
         return true;
     }
-
-
-
-
-
-
-
-
 }
 

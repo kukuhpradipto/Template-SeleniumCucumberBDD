@@ -1,7 +1,5 @@
-/home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/CompleteStep.java
 /home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/CheckoutStep.java
 /home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/LoginSteps.java
-/home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/CheckOutFromStep.java
 /home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/Hooks.java
 /home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/RunCukesTest.java
 /home/kukuh/AlteraAcademy/Automation/Saucedemo/src/test/java/step_definitions/PurchaseSteps.java

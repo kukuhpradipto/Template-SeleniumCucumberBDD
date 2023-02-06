@@ -19,8 +19,6 @@ public class Hooks {
      webDriver.manage().window().maximize();
 
  }
-
-
 // untuk closing automation
 @After
     public void closeBrowser(){

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3503641095,
+              "duration": 1920990582,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 121908508,
+              "duration": 169029809,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 348375965,
+              "duration": 395693832,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1360883109,
+              "duration": 1495650541,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 35763264,
+              "duration": 41184374,
               "status": "passed"
             },
             "line": 9,
@@ -80,25 +80,28 @@
           },
           {
             "result": {
-              "duration": 1113216188,
+              "duration": 1098540089,
               "status": "passed"
             },
             "line": 10,
-            "name": "User sort product list by \"Name (Z to A)\"",
+            "name": "User choose product list by \"Name (Z to A)\"",
             "match": {
               "arguments": [
                 {
                   "val": "Name (Z to A)",
-                  "offset": 27
+                  "offset": 29
                 }
               ],
               "location": "PurchaseSteps.sortProductValue(String)"
             },
-            "keyword": "And "
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1132364030,
+              "duration": 1145562592,
               "status": "passed"
             },
             "line": 11,
@@ -114,19 +117,19 @@
           },
           {
             "result": {
-              "duration": 1061991586,
+              "duration": 1065186007,
               "status": "passed"
             },
             "line": 12,
             "name": "User click on icon cart to verify product",
             "match": {
-              "location": "CheckoutStep.clickIconsCart()"
+              "location": "PurchaseSteps.clickIconsCart()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1050321338,
+              "duration": 1088587534,
               "status": "passed"
             },
             "line": 13,
@@ -143,11 +146,11 @@
             "matchedColumns": [
               2
             ],
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1053429697,
+              "duration": 1085543406,
               "status": "passed"
             },
             "line": 14,
@@ -159,77 +162,82 @@
           },
           {
             "result": {
-              "duration": 2252020822,
+              "duration": 2316094338,
               "status": "passed"
             },
             "line": 15,
-            "name": "User input Check Out Form in Firs Name \"Kukuh\", Last Name \"Pradipto\" and Partial Code \"123\".",
+            "name": "User input Check Out Form in Firs Name \"kukuh\", Last Name \"pradipto\" and Partial Code \"12345\".",
             "match": {
               "arguments": [
                 {
-                  "val": "Kukuh",
+                  "val": "kukuh",
                   "offset": 40
                 },
                 {
-                  "val": "Pradipto",
+                  "val": "pradipto",
                   "offset": 59
                 },
                 {
-                  "val": "123",
+                  "val": "12345",
                   "offset": 87
                 }
               ],
-              "location": "CheckOutFromStep.inputCheckOutForm(String,String,String)"
+              "location": "CheckoutStep.inputCheckOutForm(String,String,String)"
             },
-            "keyword": "Then "
+            "matchedColumns": [
+              4,
+              5,
+              6
+            ],
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 45788191,
+              "duration": 55635140,
               "status": "passed"
             },
             "line": 16,
             "name": "User verify nominal taxt",
             "match": {
-              "location": "CompleteStep.verifyNominalTax()"
+              "location": "CheckoutStep.verifyNominalTax()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 40874017,
+              "duration": 40968920,
               "status": "passed"
             },
             "line": 17,
             "name": "User verify Summary total Checkout",
             "match": {
-              "location": "CompleteStep.verifyNominalTotal()"
+              "location": "CheckoutStep.verifyNominalTotal()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5074787337,
+              "duration": 5079735900,
               "status": "passed"
             },
             "line": 18,
             "name": "User click button finish",
             "match": {
-              "location": "CompleteStep.clickOnBtnFinish()"
+              "location": "CheckoutStep.clickOnBtnFinish()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000529502,
+              "duration": 1000983049,
               "status": "passed"
             },
             "line": 19,
             "name": "User complete order",
             "match": {
-              "location": "CompleteStep.verifyOnCheckOutCompletePage()"
+              "location": "CheckoutStep.verifyOnCheckOutCompletePage()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [

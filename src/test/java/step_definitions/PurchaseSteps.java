@@ -2,13 +2,13 @@ package step_definitions;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.example.pageObejct.LandingPage;
-import org.example.pageObejct.LoginPage;
+import cucumber.api.java.en.When;
+import pageObject.CheckOutPage;
+import pageObject.LandingPage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class PurchaseSteps {
 
@@ -26,7 +26,7 @@ public class PurchaseSteps {
     }
 
 
-    @And("User sort product list by \"(.*)\"")
+    @When("User choose product list by \"(.*)\"")
     public void sortProductValue(String sort) throws InterruptedException {
         LandingPage landingPage = new LandingPage(webDriver);
         Thread.sleep(1000);
@@ -45,6 +45,15 @@ public class PurchaseSteps {
     public void addItemToCart(String itemTshirt) {
         WebElement a = webDriver.findElement(By.xpath("//div[text()='"+itemTshirt+"']/ancestor::div[@class='inventory_item_label']/following-sibling::div/button"));
         a.click();
+    }
+
+
+    //ICONS CART
+    @Then("User click on icon cart to verify product")
+    public void clickIconsCart() throws InterruptedException {
+        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
+        checkOutPage.clickCart();
+        Thread.sleep(1000);
     }
 
 }

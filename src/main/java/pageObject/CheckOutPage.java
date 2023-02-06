@@ -1,4 +1,4 @@
-package org.example.pageObejct;
+package pageObject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,14 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.text.DecimalFormat;
 
-public class CartPage {
+public class CheckOutPage {
 
     public static WebDriver driver;
-    public CartPage(WebDriver driver){
+    public CheckOutPage(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
-
     @FindBy(css = ".shopping_cart_link")
     private WebElement iconsCart;
     public void clickCart (){
@@ -74,5 +73,51 @@ public class CartPage {
     public void clickBtnCheckOut(){
         btnCheckOut.click();
     }
+
+
+    @FindBy(xpath = "//input[@id='first-name']")
+    private WebElement firstName;
+    public void inputFirstName(String fn){
+        firstName.sendKeys(fn);
+    }
+
+
+    @FindBy(xpath = "//input[@id='last-name']")
+    private WebElement lastName;
+    public void inputLastName(String ln){
+        lastName.sendKeys(ln);
+    }
+
+    @FindBy(xpath = "//input[@id='postal-code']")
+    private WebElement portalCode;
+    public void inputPortalCode(String pc){
+        portalCode.sendKeys(pc);
+    }
+
+    @FindBy(xpath = "//input[@id='continue']")
+    private WebElement btnContinue;
+    public void clickBtnContinue(){
+        btnContinue.click();
+    }
+
+    @FindBy(xpath = "//h3")
+    private WebElement errorFormCheckout;
+    public String verifyErrorFormCheckout(){
+        return errorFormCheckout.getText();
+    }
+
+    // COMPLETED ORDER
+    @FindBy(xpath = "//button[@id='finish']")
+    private WebElement btnFinish;
+    public void clickBtnFinish (){
+        btnFinish.click();
+    }
+
+    @FindBy(xpath = "//div[@class='complete-text']")
+    private WebElement verifyCheckOutPage;
+    public boolean checkOutCompletePage(){
+        verifyCheckOutPage.isDisplayed();
+        return true;
+    };
 
 }
