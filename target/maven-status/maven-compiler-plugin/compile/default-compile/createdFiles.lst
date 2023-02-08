@@ -1,4 +1,3 @@
-pageObject/CompletePage.class
+pageObject/LoginPage.class
 pageObject/CheckOutPage.class
 pageObject/LandingPage.class
-pageObject/LoginPage.class

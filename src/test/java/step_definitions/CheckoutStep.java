@@ -8,8 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import pageObject.CheckOutPage;
-import pageObject.CompletePage;
 
 public class CheckoutStep {
 
@@ -34,18 +34,30 @@ public class CheckoutStep {
     }
 
 
-    // FILLED
     @When("User input Check Out Form in Firs Name \"(.*)\", Last Name \"(.*)\" and Partial Code \"(.*)\".")
-    public void inputCheckOutForm(String fn, String ln, String pc) throws InterruptedException {
-        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        checkOutPage.inputFirstName(fn);
-        checkOutPage.inputLastName(ln);
-        checkOutPage.inputPortalCode(pc);
-        Thread.sleep(1000);
-        checkOutPage.clickBtnContinue();
-        Thread.sleep(1000);
-
+    public void input(String fname, String lname, String cportal){
+        WebElement unserName = webDriver.findElement(By.xpath("//input[@id='first-name']"));
+        WebElement lName = webDriver.findElement(By.xpath("//input[@id='last-name']"));
+        WebElement cPortal = webDriver.findElement(By.xpath("//input[@id='postal-code']"));
+        WebElement bContinuew = webDriver.findElement(By.xpath("//input[@id='continue']"));
+        unserName.sendKeys(fname);
+        lName.sendKeys(lname);
+        cPortal.sendKeys(cportal);
+        bContinuew.click();
     }
+
+//    // FILLED
+//    @When("User input Check Out Form in Firs Name \"(.*)\", Last Name \"(.*)\" and Partial Code \"(.*)\".")
+//    public void inputCheckOutForm(String fn, String ln, String pc) throws InterruptedException {
+//        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
+//        checkOutPage.inputFirstName(fn);
+//        checkOutPage.inputLastName(ln);
+//        checkOutPage.inputPortalCode(pc);
+//        Thread.sleep(1000);
+//        checkOutPage.clickBtnContinue();
+//        Thread.sleep(1000);
+//
+//    }
 
     @And("User see error massage \"(.*)\"")
     public void popUpErrorCheckoutForm(String errorFormCheckout){
@@ -79,7 +91,7 @@ public class CheckoutStep {
 
     @Then("User complete order")
     public boolean verifyOnCheckOutCompletePage() throws InterruptedException {
-        CompletePage completePage = new CompletePage(webDriver);
+    CheckOutPage checkOutPage = new CheckOutPage(webDriver);
         Thread.sleep(1000);
         return true;
     }
