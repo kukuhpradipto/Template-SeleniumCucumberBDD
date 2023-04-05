@@ -1,6 +1,6 @@
 @HomePage
-Feature: Sort Product
-  As a user I want to filled checkout form to click button checkout
+Feature: Sort list product
+  As a user I want to sort product
 
   Scenario Outline: User input first name, last name, and partial code in checkout form
     Given User open the website sauce demo

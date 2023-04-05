@@ -13,11 +13,11 @@ import step_definitions.Hooks;
 
 import java.util.*;
 
-public class PurchaseStepdefs {
+public class HomeStepdefs {
 
     private WebDriver webDriver;
 
-    public PurchaseStepdefs(){
+    public HomeStepdefs(){
         super();
         this.webDriver = Hooks.webDriver;
     }
