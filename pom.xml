@@ -131,6 +131,9 @@
                         <goals>
                             <goal>generate</goal>
                         </goals>
+
+
+
                         <configuration>
                             <projectName>Sucedemo Testing</projectName>
                             <outputDirectory>${project.build.directory}/Report/cucumber-reports</outputDirectory>
