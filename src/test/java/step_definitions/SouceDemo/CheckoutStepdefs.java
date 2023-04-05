@@ -46,19 +46,6 @@ public class CheckoutStepdefs {
         bContinuew.click();
     }
 
-//    // FILLED
-//    @When("User input Check Out Form in Firs Name \"(.*)\", Last Name \"(.*)\" and Partial Code \"(.*)\".")
-//    public void inputCheckOutForm(String fn, String ln, String pc) throws InterruptedException {
-//        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-//        checkOutPage.inputFirstName(fn);
-//        checkOutPage.inputLastName(ln);
-//        checkOutPage.inputPortalCode(pc);
-//        Thread.sleep(1000);
-//        checkOutPage.clickBtnContinue();
-//        Thread.sleep(1000);
-//
-//    }
-
     @And("User see error massage \"(.*)\"")
     public void popUpErrorCheckoutForm(String errorFormCheckout){
         CheckOutPage checkOutPage = new CheckOutPage(webDriver);

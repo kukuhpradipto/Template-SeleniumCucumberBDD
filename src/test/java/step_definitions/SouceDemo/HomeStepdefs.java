@@ -4,7 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.support.ui.Select;
 import pageObject.CheckOutPage;
-import pageObject.LandingPage;
+import pageObject.HomePage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,8 +24,8 @@ public class HomeStepdefs {
 
     @Then("User already on landing page")  // identitas final method
     public void verifyLandingPage(){ // final method
-        LandingPage landingPage = new LandingPage(webDriver);
-        Assert.assertTrue(landingPage.verifyLandingPage());
+        HomePage homePage = new HomePage(webDriver);
+        Assert.assertTrue(homePage.verifyLandingPage());
     }
 
 
@@ -45,12 +45,9 @@ public class HomeStepdefs {
         //3. Filter sort
             Select sortHamburger = new Select(webDriver.findElement(By.xpath("//select[@class='product_sort_container']")));
             sortHamburger.selectByVisibleText(sort);
-            Thread.sleep(500);
         //4. After filter
             List<WebElement> afterFilterName = webDriver.findElements(By.className("inventory_item_name"));
-
             List<String> afterFilterNameList = new ArrayList<>();
-
             for(WebElement p: afterFilterName){
                 afterFilterNameList.add(String.valueOf((p.getText().substring(0,4))));
             }
@@ -91,7 +88,6 @@ public class HomeStepdefs {
 
             Select sortHamburger = new Select(webDriver.findElement(By.xpath("//select[@class='product_sort_container']")));
             sortHamburger.selectByVisibleText(sort);
-            Thread.sleep(500);
 
             List<WebElement> afterPriceSort = webDriver.findElements(By.className("inventory_item_price"));
             List<Double> afterPriceSortList = new ArrayList<>();
@@ -113,7 +109,6 @@ public class HomeStepdefs {
 
             Select sortHamburger = new Select(webDriver.findElement(By.xpath("//select[@class='product_sort_container']")));
             sortHamburger.selectByVisibleText(sort);
-            Thread.sleep(500);
 
             List<WebElement> afterPriceSort = webDriver.findElements(By.className("inventory_item_price"));
             List<Double> afterPriceSortList = new ArrayList<>();
@@ -127,14 +122,13 @@ public class HomeStepdefs {
         }
 
         Thread.sleep(1000);
-
     }
 
     @And("User choice 2 product from the list")
     public void choiceBasket() throws InterruptedException {
-        LandingPage landingPage = new LandingPage(webDriver);
-        landingPage.clickBasket2();
-        landingPage.clickBasket1();
+        HomePage homePage = new HomePage(webDriver);
+        homePage.clickBasket2();
+        homePage.clickBasket1();
         Thread.sleep(1000);
     }
 

@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
-public class LandingPage {
+public class HomePage {
     public static WebDriver driver;
 
-    public LandingPage(WebDriver driver){
+    public HomePage(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
@@ -36,11 +35,4 @@ public class LandingPage {
         return true;
     }
 
-
-    @FindBy(xpath = "")
-    private WebElement selectContainer;
-    public void sortProduct(String sort){
-        Select a = new Select(selectContainer);
-        a.selectByVisibleText(sort);
-    }
 }

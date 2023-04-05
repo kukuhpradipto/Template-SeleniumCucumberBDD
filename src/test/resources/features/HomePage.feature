@@ -11,5 +11,5 @@ Feature: Sort list product
       | Sort                |
       | Price (low to high) |
       | Name (A to Z)       |
-      | Price (low to high) |
-      | Name (A to Z)       |
+      | Price (high to low) |
+      | Name (Z to A)       |
