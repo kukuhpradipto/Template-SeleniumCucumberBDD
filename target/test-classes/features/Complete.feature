@@ -8,7 +8,7 @@
       When User input "standard_user" as userName and Input "secret_sauce" as password
       Then User already on landing page
       When User choose product list by "<produkList>"
-      And User choice 2 product from the list "<produk>" and "<produkk>"
+      And User choice 2 product from the list "<product>" and "<product2>"
       Then User click on icon cart to verify product
       And User delete product "<deleteProduct>"
       And User click button checkout
@@ -19,6 +19,6 @@
       Then User complete order
 
       Examples:
-        | produk            | produkk                           | deleteProduct                     | produkList    | firstName | lastName | partialCode |
-        | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) | Name (Z to A) | kukuh     | pradipto | 12345       |
+        | product           | product2                          | deleteProduct                     | produkList          | firstName | lastName | partialCode |
+        | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) | Price (low to high) | kukuh     | pradipto | 12345       |
 

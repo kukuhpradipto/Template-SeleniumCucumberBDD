@@ -2,27 +2,26 @@ package step_definitions;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Hooks {
-    // untuk starting awal
- public static WebDriver webDriver;
-
- @Before
+    public static WebDriver webDriver;
+    @Before
     public void openBrowser(){
-     System.setProperty("webdriver.chrome.driver","/home/kukuh/AlteraAcademy/Automation/Saucedemo/driver/chromedriver");
+        ChromeOptions a = new ChromeOptions();
+        WebDriverManager.chromedriver().setup();
+        webDriver= new ChromeDriver(a);
+        String URL = "https://www.saucedemo.com/";
+        webDriver.get(URL);
+        webDriver.manage().window().maximize();
 
-     webDriver = new ChromeDriver();
-     String appUrl = "https://www.saucedemo.com/";
-     webDriver.get(appUrl);
-     webDriver.manage().window().maximize();
-
- }
-// untuk closing automation
-@After
+    }
+    @After
     public void closeBrowser(){
-     webDriver.quit();
+        webDriver.quit();
+    }
 }
 
-}

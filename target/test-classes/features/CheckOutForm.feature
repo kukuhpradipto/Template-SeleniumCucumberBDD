@@ -35,5 +35,5 @@ Feature: Input Checkout Form flow
     Then User input Check Out Form in Firs Name "kukuh", Last Name "pradipto" and Partial Code "123".
 
     Examples:
-      | produk1           | produk2                           | deleteProduct                     |
-      | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) | Test.allTheThings() T-Shirt (Red) |
+      | produk1           | produk2                           |  |
+      | Sauce Labs Onesie | Test.allTheThings() T-Shirt (Red) |  |

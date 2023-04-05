@@ -20,7 +20,6 @@ Add the feature file under `features/Complete.feature`
 
 ```java
 @Complete
-
   Feature: Completed order
          As a user I want to completed buy product 
       Scenario Outline: user completed order product 
