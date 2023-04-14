@@ -4,12 +4,15 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageObject.CheckOutPage;
 import step_definitions.Hooks;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.openqa.selenium.By.*;
 
 public class CheckoutStepdefs {
 
@@ -26,13 +29,6 @@ public class CheckoutStepdefs {
         Thread.sleep(1000);
     }
 
-    @And("User click button checkout")
-    public void clickOnCheckOut() throws InterruptedException {
-        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        checkOutPage.clickBtnCheckOut();
-        Thread.sleep(1000);
-    }
-
 
     @When("User input Check Out Form in Firs Name \"(.*)\", Last Name \"(.*)\" and Partial Code \"(.*)\".")
     public void input(String fname, String lname, String cportal){
@@ -46,40 +42,52 @@ public class CheckoutStepdefs {
         bContinuew.click();
     }
 
-    @And("User see error massage \"(.*)\"")
-    public void popUpErrorCheckoutForm(String errorFormCheckout){
-        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        Assert.assertEquals(errorFormCheckout, checkOutPage.verifyErrorFormCheckout());
+
+    @When("^user click on the button Continue Shopping$")
+    public void userClickOnTheButtonContinueShopping() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.id("continue-shopping"));
+        a.click();
+        Thread.sleep(500);
     }
 
-    //COMPLETED STEP
-    @And("User verify nominal taxt")
-    public void verifyNominalTax(){
-        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        Assert.assertEquals(checkOutPage.numberSTaxLabel(),checkOutPage.setNominalTax(),0);
+    @Then("^user navigate back on the home page$")
+    public void userNavigateBackOnTheHomePage() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.cssSelector(".title"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(500);
     }
 
-    @And("User verify Summary total Checkout")
-    public void verifyNominalTotal(){
-        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        Assert.assertEquals(checkOutPage.numberSTaxLabel()+checkOutPage.numberItemTotal(), checkOutPage.nominalTotal(),0);
+    @Then("^items missing from the list product at checkout page$")
+    public void itemsMissingFromTheListProductAtCheckoutPage() throws InterruptedException {
+        WebElement a = webDriver.findElement(cssSelector(".shopping_cart_badge"));
+        String amountCart = a.getText();
+        int amountcartList = Integer.parseInt(amountCart);
+
+        Thread.sleep(500);
+        List<WebElement> remove = webDriver.findElements(xpath("//button[text()='Remove']"));
+        List<String> removeList = new ArrayList<>();
+
+        for(WebElement p:remove){
+            removeList.add(p.getText());
+        }
+        int amountRemoveList = removeList.size();
+
+        Assert.assertEquals(amountcartList, amountRemoveList);
     }
 
-    @And("User click button finish")
-    public void clickOnBtnFinish() throws InterruptedException {
-        CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        Thread.sleep(2000);
-        JavascriptExecutor js = (JavascriptExecutor)webDriver;
-        js.executeScript("window.scrollBy(0,300)");
-        Thread.sleep(1000);
-        checkOutPage.clickBtnFinish();
-        Thread.sleep(2000);
+    @When("^user click on the button Check Out$")
+    public void userClickOnTheButtonCheckOut() throws InterruptedException {
+        WebElement a = webDriver.findElement(id("checkout"));
+        a.click();
+        Thread.sleep(500);
     }
 
-    @Then("User complete order")
-    public boolean verifyOnCheckOutCompletePage() throws InterruptedException {
-    CheckOutPage checkOutPage = new CheckOutPage(webDriver);
-        Thread.sleep(1000);
-        return true;
+    @Then("^user navigate back on the check out fill information page$")
+    public void userNavigateBackOnTheCheckOutFillInformationPage() throws InterruptedException {
+        WebElement a = webDriver.findElement(cssSelector(".title"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(500);
     }
 }

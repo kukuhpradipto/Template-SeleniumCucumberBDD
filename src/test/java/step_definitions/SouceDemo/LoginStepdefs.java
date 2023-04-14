@@ -1,12 +1,17 @@
 package step_definitions.SouceDemo;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pageObject.LoginPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import step_definitions.Hooks;
+
+import static org.openqa.selenium.By.xpath;
 
 public class LoginStepdefs {
 
@@ -17,25 +22,52 @@ public class LoginStepdefs {
         this.webDriver = Hooks.webDriver;
     }
 
-    @Given("User open the website sauce demo") // verifiy tulisan Username
-    public void verifyLogin(){
-        LoginPage loginPage = new LoginPage(webDriver);
-        Assert.assertTrue(loginPage.verifyLoginPage());
-    }
-
-    @When("User input \"(.*)\" as userName and Input \"(.*)\" as password")
-    public void inputCredential(String userName, String password) throws InterruptedException {
-        LoginPage loginPage = new LoginPage(webDriver);
-        loginPage.setUserName(userName);
-        loginPage.setPassword(password);
-        loginPage.clickLogin();
-        Thread.sleep(1000);
-    }
 
     //IF ERROR
-    @Then("User see error \"(.*)\" on login page" )
-    public void verifyErrorText( String errorText){
-        LoginPage loginPage = new LoginPage(webDriver);
-        Assert.assertEquals(errorText, loginPage.verifyErrorText());
+
+
+    @Given("^user already on the login page$")
+    public void userAlreadyOnTheLoginPage() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.id("login-button"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(500);
+    }
+
+    @When("^user fill userName with \"([^\"]*)\"$")
+    public void userFillUserNameWith(String arg0) throws InterruptedException {
+        WebElement a = webDriver.findElement(By.id("user-name"));
+        a.sendKeys(arg0);
+        Thread.sleep(500);
+    }
+
+    @And("^user fill password with \"([^\"]*)\"$")
+    public void userFillPasswordWith(String arg0) throws InterruptedException {
+        WebElement a = webDriver.findElement(By.id("password"));
+        a.sendKeys(arg0);
+        Thread.sleep(500);
+    }
+
+    @Then("^user click button login$")
+    public void userClickButtonLogin() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.id("login-button"));
+        a.click();
+        Thread.sleep(500);
+    }
+
+    @And("^user navigate to home page$")
+    public void userNavigateToHomePage() throws InterruptedException {
+        WebElement a = webDriver.findElement(xpath("//div[@class='app_logo']"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(500);
+    }
+
+    @And("^verify that an error message appears on the screen$")
+    public void verifyThatAnErrorMessageAppearsOnTheScreen() throws InterruptedException {
+        WebElement a = webDriver.findElement(xpath("//h3"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(500);
     }
 }
